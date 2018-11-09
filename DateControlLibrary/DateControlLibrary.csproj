@@ -42,23 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DateControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DateControl.Designer.cs">
-      <DependentUpon>DateControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Design\DateControlRootDesigner.cs" />
     <Compile Include="ThrDateTimePicker.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="DateControl.resx">
-      <DependentUpon>DateControl.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
