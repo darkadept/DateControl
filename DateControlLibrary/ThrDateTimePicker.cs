@@ -13,6 +13,7 @@ namespace DateControlLibrary
 {
     public class ThrDateTimePicker : DateTimePicker
     {
+        DateTime value;
         private MaskedTextBox textbox;
         private int buttonWidth;
         private string maskPattern;
@@ -71,7 +72,7 @@ namespace DateControlLibrary
         {
             // Console.Write("TextChanged: ");
             // Console.WriteLine(textbox.Text);
-            if (DateTime.TryParse(textbox.Text, out DateTime value))
+            if (DateTime.TryParse(textbox.Text, out value))
             {
                 try
                 {
